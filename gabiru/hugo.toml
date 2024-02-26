@@ -1,4 +1,4 @@
 baseURL = 'https://gbrlferz.github.io/'
 languageCode = 'en-us'
 title = 'Gabiru'
-theme = 'PaperMod'
+theme = 'paper'
