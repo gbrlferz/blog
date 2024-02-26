@@ -8,3 +8,6 @@
 [submodule "gabiru/themes/paper"]
 	path = gabiru/themes/paper
 	url = https://github.com/nanxiaobei/hugo-paper
+[submodule "gabiru/themes/hextra"]
+	path = gabiru/themes/hextra
+	url = https://github.com/imfing/hextra.git
