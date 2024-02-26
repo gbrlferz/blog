@@ -1,0 +1,150 @@
+# Configuration
+baseURL: "https://gabiru.art/"
+title: "Gabiru"
+theme: "Hextra"
+
+enableRobotsTXT: true
+enableGitInfo: true
+# enableEmoji: false
+hasCJKLanguage: true
+
+# services:
+#   googleAnalytics:
+#     ID: G-MEASUREMENT_ID
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
+defaultContentLanguage: pt-br
+languages:
+  pt-br:
+    languageName: Português
+    weight: 1
+    title: Gabiru
+  en:
+    languageName: English
+    weight: 2
+    title: Hextra
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+enableInlineShortcodes: true
+
+menu:
+  main:
+    - identifier: projetos
+      name: Projetos
+      pageRef: /projetos
+      weight: 1
+    - identifier: textos
+      name: Textos
+      pageRef: /textos
+      weight: 2
+    - identifier: sobre
+      name: Sobre mim
+      pageRef: /sobre
+      weight: 3
+    - name: Pesquisa
+      weight: 4
+      params:
+        type: search
+    - name: Goodreads
+      weight: 5
+      url: "https://www.goodreads.com/gbrlferz"
+      params:
+        icon: book-open
+    - name: Letterboxd
+      weight: 6
+      url: "https://letterboxd.com/gbrlferz/"
+      params:
+        icon: film
+    - name: GitHub
+      weight: 7
+      url: "https://github.com/gbrlferz"
+      params:
+        icon: github
+
+  sidebar:
+    - identifier: more
+      name: More
+      params:
+        type: separator
+      weight: 1
+    - identifier: about
+      name: "Sobre"
+      pageRef: "/sobre"
+      weight: 2
+    - identifier: hugoDocs
+      name: "Hugo Docs ↗"
+      url: "https://gohugo.io/documentation/"
+      weight: 3
+
+params:
+  description: Modern, responsive, batteries-included Hugo theme for creating beautiful static websites.
+
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/rat.svg
+      dark: images/rat-dark.svg
+      # width: 40
+      # height: 20
+      # link: /
+    width: wide
+
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: normal
+
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: false
+    width: normal
+
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  # Search
+  # flexsearch is enabled by default
+  search:
+    enable: true
+    type: flexsearch
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+
+  blog:
+    list:
+      displayTags: true
+
+  comments:
+    enable: false
+    type: giscus
+
+    # https://giscus.app/
+    giscus:
+      repo: imfing/hextra
+      repoId: R_kgDOJ9fJag
+      category: General
+      categoryId: DIC_kwDOJ9fJas4CY7gW
+      # mapping: pathname
+      # strict: 0
+      # reactionsEnabled: 1
+      # emitMetadata: 0
+      # inputPosition: top
+      # lang: en
