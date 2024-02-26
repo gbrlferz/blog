@@ -5,3 +5,6 @@
 	path = gabiru/public
 	url = https://github.com/gbrlferz/gbrlferz.github.io.git
 	branch = main
+[submodule "gabiru/themes/paper"]
+	path = gabiru/themes/paper
+	url = https://github.com/nanxiaobei/hugo-paper
