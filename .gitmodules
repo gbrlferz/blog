@@ -1,0 +1,7 @@
+[submodule "gabiru/themes/PaperMod"]
+	path = gabiru/themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "gabiru/public"]
+	path = gabiru/public
+	url = https://github.com/gbrlferz/gbrlferz.github.io.git
+	branch = main
